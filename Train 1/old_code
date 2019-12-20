@@ -1,0 +1,26 @@
+
+folders = [x[0] for x in os.walk(str(os.getcwd())+'\OpinRankDataset\cars')]
+
+for i in folders[1:]:
+    file_in_dir = glob.glob(i + '\*')
+
+for i in file_in_dir:
+    print(i)
+
+
+
+
+
+
+# print(f_2007)
+# i = 1
+# for f in f_2007:
+#     # print(f)
+#     file = open(f, 'r')
+#     read = file.read()
+#     text = re.findall('<TEXT>(.*)</TEXT>', read)
+#     fav = re.findall('<FAVORITE>(.*)</FAVORITE>', read)
+#
+#
+# for i in text:
+#     print(i, '\n\n')
